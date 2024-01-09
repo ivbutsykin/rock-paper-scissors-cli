@@ -9,12 +9,12 @@ const cli = meow(
 		Usage
 		  $ rock-paper-scissors-cli
 
-		Options
-			--name  Your name
-
 		Examples
-		  $ rock-paper-scissors-cli --name=Jane
-		  Hello, Jane
+		  $ rock-paper-scissors-cli
+		  Select a shape:
+		  > Rock
+		    Paper
+		    Scissors
 	`,
   {
     importMeta: import.meta,

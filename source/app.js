@@ -1,10 +1,29 @@
-import React from 'react';
-import { Text } from 'ink';
+import React, { useState } from 'react';
+import { Box } from 'ink';
 
-export default function App({ name = 'Stranger' }) {
+import SelectShapes from './components/molecules/SelectShapes/SelectShapes.js';
+import GameResult from './components/organisms/GameResult/GameResult.js';
+
+export default function App() {
+  const [step, setStep] = useState(1);
+  const [history, setHistory] = useState([]);
+
+  const isStepOne = step === 1;
+  const isStepTwo = step === 2;
+
   return (
-    <Text>
-      Hello, <Text color="green">{name}</Text>
-    </Text>
+    <Box>
+      {isStepOne && <SelectShapes onSubmit={handleUpdateGameHistory} />}
+      {isStepTwo && <GameResult history={history} onPlayAgain={handlePlayAgain} />}
+    </Box>
   );
+
+  function handleUpdateGameHistory(game) {
+    setHistory((curr) => [...curr, game]);
+    setStep(2);
+  }
+
+  function handlePlayAgain() {
+    setStep(1);
+  }
 }
