@@ -14,7 +14,7 @@ Rock Paper Scissors against the computer is a classic game where you face off ag
 
 ### Built With
 
-- [Ink](https://github.com/vadimdemedes/ink?tab=readme-ov-file#getting-started)
+- [Ink](https://github.com/vadimdemedes/ink)
 
 ## Installation
 
