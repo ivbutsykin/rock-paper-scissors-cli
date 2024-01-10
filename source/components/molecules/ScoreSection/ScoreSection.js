@@ -4,6 +4,7 @@ import { Box, Text, Newline } from 'ink';
 import Select from '../../atoms/Select.js';
 import { calculateScore } from './helpers.js';
 import { ACTION, ACTION_ITEMS } from './constants.js';
+import { RESULT, RESULT_COLOR } from '../../../constants.js';
 
 function ScoreSection({ history, onBack }) {
   const score = calculateScore(history);
@@ -11,11 +12,17 @@ function ScoreSection({ history, onBack }) {
   return (
     <Box flexDirection="column">
       <Text>
-        <Text>{`Wins: ${score.wins}`}</Text>
+        <Text>
+          Wins: <Text color={RESULT_COLOR[RESULT.WIN]}>{score.wins}</Text>
+        </Text>
         <Newline />
-        <Text>{`Draws: ${score.draws}`}</Text>
+        <Text>
+          Draws: <Text color={RESULT_COLOR[RESULT.DRAW]}>{score.draws}</Text>
+        </Text>
         <Newline />
-        <Text>{`Losses: ${score.losses}`}</Text>
+        <Text>
+          Losses: <Text color={RESULT_COLOR[RESULT.LOSE]}>{score.losses}</Text>
+        </Text>
         <Newline />
       </Text>
 

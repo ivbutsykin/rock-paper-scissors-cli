@@ -9,3 +9,9 @@ export const RESULT = {
   LOSE: 'lose',
   DRAW: 'draw',
 };
+
+export const RESULT_COLOR = {
+  [RESULT.WIN]: 'green',
+  [RESULT.LOSE]: 'red',
+  [RESULT.DRAW]: 'yellow',
+};

@@ -3,6 +3,7 @@ import { Box, Text, Newline, useApp } from 'ink';
 
 import Select from '../../atoms/Select.js';
 import { checkResult } from '../../../helpers.js';
+import { RESULT_COLOR } from '../../../constants.js';
 import { SHAPE_TEXT, RESULT_TEXT, ACTION, ACTION_ITEMS } from './constants.js';
 
 function OverviewSection({ game, onPlayAgain, onShowScore }) {
@@ -18,7 +19,7 @@ function OverviewSection({ game, onPlayAgain, onShowScore }) {
       <Text>
         <Text>{overviewText}</Text>
         <Newline />
-        <Text>{resultText}</Text>
+        <Text color={RESULT_COLOR[result]}>{resultText}</Text>
         <Newline />
       </Text>
 
