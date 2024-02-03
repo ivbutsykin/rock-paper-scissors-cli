@@ -1,4 +1,8 @@
 <div align="center">
+  <a href="https://github.com/ivbutsykin/rock-paper-scissors-cli">
+    <img width="80" height="80" src="https://img.icons8.com/officel/80/rock.png" alt="rock"/>
+  </a>
+  
   <h3 align="center">Rock Paper Scissors</h3>
 
   <p align="center">
