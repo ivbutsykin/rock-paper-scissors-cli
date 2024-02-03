@@ -6,7 +6,7 @@
   <h3 align="center">Rock Paper Scissors</h3>
 
   <p align="center">
-    Rock Paper Scissors showdown against the computer. Classic fun in your  command line.
+    Rock Paper Scissors showdown against the computer. Classic fun in your  command line
   </p>
 </div>
 
